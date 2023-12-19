@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define a class Square."""
+"""Define classes for a singly-linked list."""
 
 
 class Square:
@@ -19,7 +19,7 @@ class Square:
         self.__size = value
 
     def area(self):
-        return self.__size ** 2
+        return self.__size * self.__size
 
     def __eq__(self, other):
         return self.area() == other.area()
