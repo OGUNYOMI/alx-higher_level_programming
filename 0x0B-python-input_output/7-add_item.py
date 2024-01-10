@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 import json
 import sys
 from save_to_json_file import save_to_json_file
@@ -16,5 +16,4 @@ def add_arguments_to_list(arguments):
 
 
 if __name__ == "__main__":
-    arguments = sys.argv[1:]
-    add_arguments_to_list(arguments)
+    add_arguments_to_list(sys.argv[1:])
