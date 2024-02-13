@@ -1,8 +1,5 @@
--- SQL script to list all tables in a specified database
+USE mysql;
 
--- Connect to the MySQL server and list all tables in the specified database
-/* This script lists all tables in the specified database */
-
-USE `mysql`;
-
-SHOW TABLES;
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'mysql';
